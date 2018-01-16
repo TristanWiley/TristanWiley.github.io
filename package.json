@@ -16,6 +16,7 @@
   "author": "Tristan Wiley <tristan@tristanwiley.com>",
   "license": "MIT",
   "dependencies": {
+    "moment": "^2.20.1",
     "node-sass-chokidar": "0.0.3",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",

@@ -2,17 +2,19 @@
   width: 400px;
   height: 779px;
   background: black;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 34px;
   padding: 45px 10px;
   display: inline-block;
   position: relative;
   -webkit-box-sizing: content-box !important;
-  box-sizing: content-box !important; }
+  box-sizing: content-box !important;
+  font-family: Product Sans; }
   .marvel-device .screen {
     width: 100%;
     position: relative;
     height: 100%;
-    z-index: 3;
+    z-index: 300;
     background: white;
     overflow: hidden;
     display: block;
@@ -27,7 +29,7 @@
     top: 13px;
     margin-left: -28px;
     background: #2d2f2f;
-    z-index: 1;
+    z-index: 10;
     border-radius: 8px; }
   .marvel-device .camera {
     height: 10px;
@@ -36,7 +38,7 @@
     position: absolute;
     top: 19px;
     background: #212b36;
-    z-index: 1;
+    z-index: 10;
     border-radius: 100%; }
   .marvel-device .camera:before {
     height: 8px;
@@ -45,7 +47,7 @@
     position: absolute;
     top: 5px;
     background: #212b36;
-    z-index: 1;
+    z-index: 10;
     border-radius: 100%; }
   .marvel-device .sleep {
     width: 2px;
@@ -79,7 +81,7 @@
     border-top: 2px solid #9fa0a2;
     border-bottom: 2px solid #9fa0a2;
     background: black;
-    z-index: 1;
+    z-index: 10;
     -webkit-box-shadow: inset 0 0 6px 0 rgba(255, 255, 255, 0.5);
     box-shadow: inset 0 0 6px 0 rgba(255, 255, 255, 0.5); }
   .marvel-device .screen {
@@ -91,13 +93,30 @@
     border-radius: 14px;
     -webkit-box-shadow: none;
     box-shadow: none; }
-  .marvel-device .navbar {
-    height: 20px;
-    width: auto;
+    .marvel-device .screen .navbar {
+      height: 20px;
+      width: auto;
+      color: white;
+      padding: 5px 15px;
+      text-align: end; }
+      .marvel-device .screen .navbar > i, .marvel-device .screen .navbar span {
+        font-size: 16px;
+        vertical-align: top; }
+  .marvel-device .nav-buttons {
+    position: absolute;
+    bottom: 0;
     color: white;
-    padding: 5px 15px;
-    text-align: end;
-    font-family: Product Sans; }
-    .marvel-device .navbar > i, .marvel-device .navbar span {
-      font-size: 16px;
-      vertical-align: top; }
+    width: 100%;
+    height: 48px;
+    align-self: center; }
+    .marvel-device .nav-buttons > .buttons {
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      width: 100%; }
+      .marvel-device .nav-buttons > .buttons svg {
+        height: 20px; }
+        .marvel-device .nav-buttons > .buttons svg:nth-child(1) {
+          margin-right: 80px; }
+        .marvel-device .nav-buttons > .buttons svg:nth-child(2) {
+          margin-right: 80px; }
