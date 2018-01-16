@@ -1,3 +1,27 @@
 body {
   text-align: center;
   background-color: white; }
+
+.app-icon {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  margin-right: 27px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .app-icon.full {
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%; }
+  .app-icon.chrome {
+    background-image: url("./images/apps/chrome.svg"); }
+  .app-icon.phone {
+    background-image: url("./images/apps/phone.png"); }
+  .app-icon.youtube {
+    background-image: url("./images/apps/youtube.svg"); }
+  .app-icon.messages {
+    background-image: url("./images/apps/messages.png"); }
+  .app-icon.camera {
+    background-image: url("./images/apps/camera.png"); }

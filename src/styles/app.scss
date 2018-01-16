@@ -2,3 +2,40 @@ body {
   text-align: center;
   background-color: white;
 }
+
+.app-icon {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  margin-right: 27px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &.full {
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+  }
+
+  &.chrome {
+    background-image: url('./images/apps/chrome.svg');
+  }
+
+  &.phone {
+    background-image: url('./images/apps/phone.png');
+  }
+
+  &.youtube {
+    background-image: url('./images/apps/youtube.svg');
+  }
+
+  &.messages {
+    background-image: url('./images/apps/messages.png');
+  }
+
+  &.camera {
+    background-image: url('./images/apps/camera.png');
+  }
+}

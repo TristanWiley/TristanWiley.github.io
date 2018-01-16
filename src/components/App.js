@@ -9,8 +9,7 @@ export default function App() {
   return (
     <div>
       <Phone>
-        <Home/>
-        {/* <Route exact path="/" component={Home} /> */}
+        <Route exact path="/" component={Home} />
       </Phone>
     </div>
   );

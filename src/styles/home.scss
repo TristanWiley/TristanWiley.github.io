@@ -3,4 +3,11 @@
         color: white;
         font-size: 24px;
     }
+
+    .bottom-apps {
+        position: absolute;
+        display: flex;
+        bottom: 48px;
+        padding: 5px 24px;
+    }
 }
