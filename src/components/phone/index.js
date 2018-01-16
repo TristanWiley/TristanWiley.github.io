@@ -4,7 +4,7 @@ import '../../styles/phone.css'
 
 const Phone = ({ children }) => (
   <div>
-    <div className="marvel-device note8">
+    <div className="pixel-device">
       <div className="inner" />
 
       <div className="speaker" />
