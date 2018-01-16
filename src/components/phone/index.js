@@ -1,5 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import moment from 'moment'
+
 import '../../styles/phone.css'
 
 const Phone = ({ children }) => (
@@ -17,7 +19,7 @@ const Phone = ({ children }) => (
           <i className="material-icons">network_wifi</i>
           <i className="material-icons">network_cell</i>
           <i className="material-icons">battery_full</i>
-          <span>12:00</span>
+          <span>{ moment().format("h:mm")}</span>
         </div>
         { children }
         <div className="nav-buttons">
