@@ -85,23 +85,28 @@
     -webkit-box-shadow: inset 0 0 6px 0 rgba(255, 255, 255, 0.5);
     box-shadow: inset 0 0 6px 0 rgba(255, 255, 255, 0.5); }
   .pixel-device > .screen {
-    background-image: url("./images/background.png");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     border-radius: 14px;
     -webkit-box-shadow: none;
     box-shadow: none; }
     .pixel-device > .screen > .navbar {
+      position: absolute;
       height: 20px;
       width: auto;
       color: white;
       padding: 5px 15px;
-      text-align: end; }
-      .pixel-device > .screen > .navbar > i, .pixel-device > .screen > .navbar span {
+      text-align: end;
+      z-index: 100;
+      right: 0; }
+      .pixel-device > .screen > .navbar > i,
+      .pixel-device > .screen > .navbar span {
         font-size: 16px;
         vertical-align: top; }
+    .pixel-device > .screen .page {
+      height: 100%;
+      width: 100%;
+      position: absolute; }
+      .pixel-device > .screen .page.app {
+        z-index: 100; }
   .pixel-device .nav-buttons {
     position: absolute;
     bottom: 0;

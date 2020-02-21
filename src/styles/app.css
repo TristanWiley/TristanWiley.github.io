@@ -3,6 +3,9 @@ body {
   background-color: white;
   user-select: none; }
 
+* {
+  font-family: 'Open Sans', sans-serif; }
+
 .app-icon {
   height: 48px;
   width: 48px;
